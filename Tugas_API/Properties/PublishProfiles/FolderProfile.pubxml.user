@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\C#\Tugas_API\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>False|2023-10-13T07:14:51.9268644Z;True|2023-10-13T10:12:09.2900329+07:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="APIContext">
+      <Value>Server=RAS-FAYYAD%3bDatabase=TugasAPI%3bUser Id=sa%3bPassword=sapassword%3b TrustServerCertificate=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="Tugas_API.Context.MyContext">
+      <Value>Server=RAS-FAYYAD%3bDatabase=TugasAPI%3bUser Id=sa%3bPassword=sapassword%3b TrustServerCertificate=True%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>
