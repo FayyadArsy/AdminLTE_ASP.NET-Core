@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tugas_API", "Tugas_API\Tugas_API.csproj", "{C394229E-5861-40DD-9336-0ABBEE2787B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientNew", "ClientNew\ClientNew.csproj", "{B1FC3FD9-E6A3-4B4F-814A-E67301A5461D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C394229E-5861-40DD-9336-0ABBEE2787B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C394229E-5861-40DD-9336-0ABBEE2787B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C394229E-5861-40DD-9336-0ABBEE2787B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C394229E-5861-40DD-9336-0ABBEE2787B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1FC3FD9-E6A3-4B4F-814A-E67301A5461D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1FC3FD9-E6A3-4B4F-814A-E67301A5461D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1FC3FD9-E6A3-4B4F-814A-E67301A5461D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1FC3FD9-E6A3-4B4F-814A-E67301A5461D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DBCE1BA-0EA5-4277-8791-C5BB12EBA04E}
+	EndGlobalSection
+EndGlobal

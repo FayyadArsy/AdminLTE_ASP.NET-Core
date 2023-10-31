@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewData["Title"] = "DeActiveEmployees";
+    Layout = "~/Views/Shared/DataTablesLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>DataTables</h1>
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">DataTables</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+
+                        <!-- Button trigger modal -->
+                        <div class="pt-3 pl-3 pb-3">
+                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" data-tooltip="tooltip" data-placement="right" title="Add New Employee" onclick="ResetText()">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Employee</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="pl-3 pt-3 pr-3">
+                                        <form id="departmentForm">
+                                            <div class="form-group">
+                                                <input type="hidden" class="form-control mb-3" id="Id" name="id" disabled>
+                                                <input type="hidden" class="form-control mb-3" id="employeeEmail" disabled>
+                                                <input type="text" class="form-control mb-3" id="employeeName" name="name" placeholder="Nama Employee">
+                                                <input type="text" class="form-control mb-3" id="employeeLastName" name="LastName" placeholder="Nama Belakang">
+                                                <input type="text" class="form-control mb-3" id="employeePhoneNumber" name="phone" placeholder="No. Hp">
+                                                <input type="text" class="form-control mb-3" id="employeeAddress" name="address" placeholder="Alamat Employee">
+                                                <input type="text" class="form-control mb-3" id="employeeDepartment" name="department" placeholder="Department Id">
+                                                <div class="custom-control custom-radio">
+                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value=true>
+                                                    <label class="custom-control-label" for="customRadio1">Aktiv</label>
+                                                </div>
+                                                <div class="custom-control custom-radio mb-3">
+                                                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value=false>
+                                                    <label class="custom-control-label" for="customRadio2">de_Aktiv</label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" id="Save" onclick="Save()" onfocus="">Submit</button>
+                                        <button type="button" class="btn btn-primary" id="Edit" onclick="Edit()" onfocus="">Edit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">DataTable with default features</h3>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="tbdeActiveEmployees" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th class="d-flex justify-content-center">No</th>
+                                        <th class="text-center">Nama</th>
+                                        <th class="text-center">Email</th>
+                                        <th class="text-center">Nama Department</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+</div>
+@section Scripts{
+    <script src="~/AdminLTE-3.2.0/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="~/AdminLTE-3.2.0/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- DataTables  & Plugins -->
+    <script src="~/AdminLTE-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/jszip/jszip.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/pdfmake/pdfmake.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/pdfmake/vfs_fonts.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.print.min.js"></script>
+    <script src="~/AdminLTE-3.2.0/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="~/AdminLTE-3.2.0/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="~/AdminLTE-3.2.0/dist/js/demo.js"></script>
+    <!-- Page specific script -->
+    @* <script src="~/js/DepartmentScript.js"></script> *@
+    <script src="~/js/employeesscript.js"></script>
+    <script src="~/js/sweetalert2.js"></script>
+}
+
+
