@@ -194,8 +194,6 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-       
-         
           <li class="nav-item menu-open">
             <a href="#" class="nav-link" id="drop-departments">
               <i class="nav-icon fas fa-table"></i>
@@ -219,7 +217,7 @@
             <a href="#" class="nav-link" id="drop-employees">
                 <i class="nav-icon fas fa-users"></i>
                 <p>
-                    Department
+                    Pegawai
                     <i class="fas fa-angle-left right"></i>
                 </p>
             </a>
@@ -251,7 +249,25 @@
                 </li>
             </ul>
         </li>
-         
+        <li class="nav-item menu-open">
+            <a href="#" class="nav-link" id="drop-charts">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Charts
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+             
+              <li class="nav-item">
+                <a href="../charts/dashboards" class="nav-link" id="list-charts">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+              
+            </ul>
+          </li> 
         
         </ul>
       </nav>
@@ -307,6 +323,10 @@
             else if (path === '/employees/employessServer') {
                 $('#drop-employees').addClass("active");
                 $('#list-pegawai_ss').addClass("active");
+            }
+            else if (path === '/charts/dashboards') {
+                $('#drop-charts').addClass("active");
+                $('#list-charts').addClass("active");
             }
             else {
                 console.log("Ini adalah halaman lainnya.");
