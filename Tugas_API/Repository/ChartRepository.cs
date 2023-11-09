@@ -19,7 +19,7 @@ namespace Tugas_API.Repository
                 {
                     DepartmentName = group.Key.Name,
                     Status = group.Count(employee => employee.status == true),
-                    Anggota = group.Count()
+                    Anggota = group.Count(employee => employee.status == false)
                 })
     .ToList();
             return query;
