@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LfG5OUDa1bBVzTYH9OGLhGI/XqttJZgrhhGD2sOJZZI=",
+  "Hash": "Yf9/jqM548Ev5wIgjHvxFIhJV3Hosp1lJM4bIB+LUGo=",
   "Source": "ClientNew",
   "BasePath": "_content/ClientNew",
   "Mode": "Default",
@@ -41342,6 +41342,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\C#\\Tugasjumat\\ClientNew\\wwwroot\\js\\ChartsScripts.js",
+      "SourceId": "ClientNew",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\C#\\Tugasjumat\\ClientNew\\wwwroot\\",
+      "BasePath": "_content/ClientNew",
+      "RelativePath": "js/ChartsScripts.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ChartsScripts.js"
     },
     {
       "Identity": "D:\\C#\\Tugasjumat\\ClientNew\\wwwroot\\js\\DepartmentScript.js",

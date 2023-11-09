@@ -9721,6 +9721,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\C#\\Tugasjumat\\ClientNew\\wwwroot\\js\\ChartsScripts.js",
+      "PackagePath": "staticwebassets\\js\\ChartsScripts.js"
+    },
+    {
       "Id": "D:\\C#\\Tugasjumat\\ClientNew\\wwwroot\\js\\DepartmentScript.js",
       "PackagePath": "staticwebassets\\js\\DepartmentScript.js"
     },
